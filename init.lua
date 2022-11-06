@@ -249,15 +249,17 @@ local config = {
                 -- All other entries override the require("<key>").setup({...}) call for default plugins
                 ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
                         -- config variable is the default configuration table for the setup function call
-                        -- local null_ls = require "null-ls"
+                        local null_ls = require "null-ls"
 
                         -- Check supported formatters and linters
                         -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
                         -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
                         config.sources = {
                                 -- Set a formatter
-                                -- null_ls.builtins.formatting.stylua,
-                                -- null_ls.builtins.formatting.prettier,
+                                null_ls.builtins.formatting.prettier,
+                                null_ls.builtins.formatting.autopep8,
+                                null_ls.builtins.diagnostics.flake8,
+                                null_ls.builtins.diagnostics.eslint,
                         }
                         return config -- return final config table
                 end,
