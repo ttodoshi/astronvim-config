@@ -229,6 +229,7 @@ local config = {
                         -- { "mi60dev/image.vim" },
                         -- { "jmcantrell/vim-virtualenv" },
                         -- { "rafi/vim-venom" },
+                        { "Pocco81/auto-save.nvim" },
 
                         -- {
                         --   "ray-x/lsp_signature.nvim",
