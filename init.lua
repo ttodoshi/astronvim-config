@@ -259,7 +259,7 @@ local config = {
                         -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
                         config.sources = {
                                 -- Set a formatter
-                                null_ls.builtins.formatting.prettier,
+                                -- null_ls.builtins.formatting.prettier,
                                 null_ls.builtins.formatting.autopep8,
                                 null_ls.builtins.diagnostics.flake8,
                                 null_ls.builtins.diagnostics.eslint,
