@@ -227,8 +227,6 @@ local config = {
                         -- { "andweeb/presence.nvim" },
 
                         -- { "mi60dev/image.vim" },
-                        -- { "jmcantrell/vim-virtualenv" },
-                        -- { "rafi/vim-venom" },
 
                         { "ap/vim-css-color" },
                         { "Pocco81/auto-save.nvim" },
